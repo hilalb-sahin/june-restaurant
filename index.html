@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>June Kyoto</title>
+        <link href="style.css" rel= 'stylesheet'>
+        <script> src= "script.js"  </script>
+    </head>
+<body> 
+<header>
+    <nav>
+      <ul>
+        <a href="#about"><li>About Us</li></a>
+        <a href="menu.html" target="_blank"><li>Menu</li> </a>
+        <a href= "#contact"><li>Contact Info</li></a>
+      </ul>
+    </nav>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <div class="container">  
+      <div class="logo">
+        <img src="logo2.png" alt="logo">
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+<div class="tab">
+    <h1 id="reservation">Reservations</h1>
+    <button class="tablinks" onclick="openCity(event, 'London')">hours</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">booking</button>
+
+  </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+
+    <h2>Lunch</h2>
+            <p>Monday - Friday: 12.00pm - 2.30pm </p>
+            <h2>Brunch</h2>
+            <p> Saturday & Sunday: 12.00pm - 2.45pm </p>
+            <h2>Dinner</h2>
+            <p>Sunday - Thursday: 5.00pm - 10.00pm </p>
+            <p>Friday - Saturday: 5.00pm - 10.15pm </p>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <h3>call us</h3>
+    <p>Experience the innovative Japanese cuisine of June Kyoto.
+        Join us for lunch, pre theatre and dinner. Our free-flow weekend
+         brunch is available every Saturday, Sunday and bank holiday.
+
+    Our partially heated and covered outdoor terrace is open daily for drinks and for lunch during the week. 
+    
+        </p>
+
+        <p>We operate on a first come, first served basis for the bar and terrace.
+    Please call our reservation team to add your name to the bar guestlist on 
+        Thursday nights and all day Friday/Saturday 020 7478 0540.</p>
+  </div>
+  
+
+</section>
+
+  
+<script>
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+<h1 class=slide>Gallery</h1>
+<div class="slideshow">
+    <div class="maindiv" >
+
+    </div> 
+
+
+</div>
+
+<footer>
+
+  <section>
+    <div id="about">
+      <h1>About Us</h1>
+      <p>June Kyoto is, quite simply, unique.</p>
+  <p>
+  Unique because it truly puts the authenticity & quality of its food 1st.</p>
+  
+  <p>June Kyoto makes its food fresh in small batches throughout the day or to order using genuine Japanese ingredients, such as sushi rice and nori (toasted seaweed), for making its sushi.</p>
+  
+  <p>Our fish supplier only works in partnership with fisheries that are MSC (Marine Stewardship Council) certified to ensure the fish we use is from sustainable fishing practices and we only use fresh British chicken and pork for our hot food menu.</p>
+    </div>
+  </section>
+
+  <section>
+    <div id="contact">
+      <h1>Contact</h1>
+      <p> &#128222; +44 20 3456 7890</p>
+      <p> &#128231 @gmail.com</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5035006849207!2d-0.11933635334765408!3d51.50397809306721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c7eeb058b3%3A0xc7575f89bd317b73!2sBelvedere%20Rd%2C%20London%20SE1%207PG%2C%20UK!5e0!3m2!1sen!2s!4v1662642095184!5m2!1sen!2s" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+
+    <div class="container">
+      <p>&copy; June Kyoto 2022</p>
+    </div>
+
+    
+  </footer>
+  
+</body>
